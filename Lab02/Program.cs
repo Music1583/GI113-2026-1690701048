@@ -40,6 +40,34 @@ namespace Lab02
             Console.WriteLine($"HP : {currenthp} / {maxHp}");
             hpPercent = currenthp * 100 / maxHp;
             Console.WriteLine($"HP Percent : {hpPercent}%");
+            // Part B
+            // ตัวละครตัวที่ 1
+            string role = "";
+            char character_Name = 'm';
+            int ammo = 0;
+            float attackPower_2 = 42.5f;
+            double criteMultiplier_2 = 1.75;
+            // ตัวละครตัวที่ 2
+            /*string character_Name_2 = "D";        
+            char rank = 's';                    
+            int ammo_2 = 20;                      
+            float attackPower_2 = 42.5f;          
+            double criteMultiplier = 1.75;      
+            // ตัวละครตัวที่ 3
+            string character_Name3 = "J";        
+            char rank = 's';                    
+            int ammo_3 = 25;                     
+            float attackPower_3 = 42.5f;          
+            double criteMultiplier = 1.75;      
+            // ตัวละครตัวที่ 4
+            string character_Name4 = "K";        
+            char rank = 's';                   
+            int ammo_4 = 35;                      
+            float attackPower_4 = 42.5f;          
+            double criteMultiplier = 1.75;      
+            bool isBoss = true;*/
+            Console.WriteLine("---Game ยิงปืน 4 คน---");
+            Console.WriteLine(" ตัวละครที่ 1 ");
         }
     }
 }
