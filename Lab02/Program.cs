@@ -11,7 +11,35 @@ namespace Lab02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Part A
+            string bossName = "Kirin";        // string เป็นข้อความใส่ใน ".."
+            char rank = 's';                    // char เป็นตัวอักษร 1 ตัว ใส่ใน '..'
+            int level = 7;                      // int เป็นจำนวนเต็ม 
+            int maxHp = 240;
+            int currenthp = 175;
+            float attackPower = 42.5f;          // float เป็นเลขทศนิยมต้องเติม f ต่อท้าย
+            double criteMultiplier = 1.75;      // double เป็นเลขทศนิยมที่ไม่ต้องเติม f เก็บได้หลายหลัก
+            bool isBoss = true;                 // bool เป็นเงื่อนไขใส่ True/false มีค่าเป็น 0/1
+            int hpPercent = 0;
+            Console.WriteLine("===== BOSS STATUS: INITIAL ====="); //hell
+            Console.WriteLine($"Name : {bossName}\n" +
+                $"Rank : {rank}\n" +
+                $"Level : {level}\n" +
+                $"Hp : {currenthp} / {maxHp}\n" +
+                $"Attack Power: {attackPower}\n" +
+                $"Crite Multiplier : {criteMultiplier}\n" +
+                $"Is Boss : {isBoss}");
+            Console.WriteLine();
+            hpPercent = currenthp * 100 / maxHp;
+            Console.WriteLine($"HP Percent : {hpPercent}%");
+            Console.WriteLine();
+            Console.WriteLine("Kirin take 60 damage! ");
+            currenthp = currenthp - 60;
+            Console.WriteLine();
+            Console.WriteLine("===== BOSS STATUS: AFTER DAMAGE =====");
+            Console.WriteLine($"HP : {currenthp} / {maxHp}");
+            hpPercent = currenthp * 100 / maxHp;
+            Console.WriteLine($"HP Percent : {hpPercent}%");
         }
     }
 }
