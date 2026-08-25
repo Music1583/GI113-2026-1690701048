@@ -42,19 +42,29 @@ namespace Lab02
             Console.WriteLine($"HP Percent : {hpPercent}%");
             // Part B
             // ตัวละครตัวที่ 1
-            string role = "";
+            Console.WriteLine("---Game shooting---");
+            Console.WriteLine(" Character 1 ");
+            string role = "hunter";
             char character_Name = 'm';
-            int ammo = 0;
-            float attackPower_2 = 42.5f;
-            double criteMultiplier_2 = 1.75;
+            int ammo = 30;
+            float attackPower_2 = 10.5f;
+            double attackSpeed = 1;
+            bool play_able = true;
+            Console.WriteLine($"Name : {character_Name}\n" +
+                $"role : {role}\n" +
+                $"Ammo : {ammo}\n" +
+                $"Attack Power : {attackPower_2}\n" +
+                $"Attack Speed : {attackSpeed}\n" +
+                $"Play able : {play_able}");
+            
             // ตัวละครตัวที่ 2
-            /*string character_Name_2 = "D";        
-            char rank = 's';                    
-            int ammo_2 = 20;                      
-            float attackPower_2 = 42.5f;          
-            double criteMultiplier = 1.75;      
+            role = "hunter";
+            char character_Name_2 = 'd';
+            int ammo_d = 25;
+            float attackPower_3 = 42.5f;
+            attackSpeed = 2;
             // ตัวละครตัวที่ 3
-            string character_Name3 = "J";        
+            /*string character_Name3 = "J";        
             char rank = 's';                    
             int ammo_3 = 25;                     
             float attackPower_3 = 42.5f;          
@@ -66,8 +76,7 @@ namespace Lab02
             float attackPower_4 = 42.5f;          
             double criteMultiplier = 1.75;      
             bool isBoss = true;*/
-            Console.WriteLine("---Game ยิงปืน 4 คน---");
-            Console.WriteLine(" ตัวละครที่ 1 ");
+            
         }
     }
 }
