@@ -43,10 +43,10 @@ namespace Lab02
             // Part B
             // ตัวละครตัวที่ 1
             Console.WriteLine("---Game shooting---");
-            Console.WriteLine(" Character 1 ");
+            Console.WriteLine("--Character 1--");
             string role = "hunter";
             char character_Name = 'm';
-            int ammo = 30;
+            int ammo = 35;
             float attackPower_2 = 10.5f;
             double attackSpeed = 1;
             bool play_able = true;
@@ -56,27 +56,25 @@ namespace Lab02
                 $"Attack Power : {attackPower_2}\n" +
                 $"Attack Speed : {attackSpeed}\n" +
                 $"Play able : {play_able}");
-            
             // ตัวละครตัวที่ 2
-            role = "hunter";
-            char character_Name_2 = 'd';
-            int ammo_d = 25;
-            float attackPower_3 = 42.5f;
-            attackSpeed = 2;
+            Console.WriteLine("--Character 2--");
+            role = "bodyguard";
+            character_Name = 'D';
+            ammo = 30;
+            attackPower_2 = 12.5f;
+            attackSpeed = 0.6;
+            play_able = false;
+            Console.WriteLine($"Name : {character_Name}\n" +
+              $"role : {role}\n" +
+              $"Ammo : {ammo}\n" +
+              $"Attack Power : {attackPower_2}\n" +
+              $"Attack Speed : {attackSpeed}\n" +
+              $"Play able : {play_able}");
             // ตัวละครตัวที่ 3
-            /*string character_Name3 = "J";        
-            char rank = 's';                    
-            int ammo_3 = 25;                     
-            float attackPower_3 = 42.5f;          
-            double criteMultiplier = 1.75;      
+            role = "drunk";
             // ตัวละครตัวที่ 4
-            string character_Name4 = "K";        
-            char rank = 's';                   
-            int ammo_4 = 35;                      
-            float attackPower_4 = 42.5f;          
-            double criteMultiplier = 1.75;      
-            bool isBoss = true;*/
-            
+            role = "Vampire";
+
         }
     }
 }
