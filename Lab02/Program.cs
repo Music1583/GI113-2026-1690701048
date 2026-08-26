@@ -42,16 +42,18 @@ namespace Lab02
             Console.WriteLine($"HP Percent : {hpPercent}%");
             // Part B
             // ตัวละครตัวที่ 1
-            Console.WriteLine("---Game shooting---");
+            Console.WriteLine("=====Character in Game shooting=====");
             Console.WriteLine("--Character 1--");
             string role = "hunter";
-            char character_Name = 'm';
+            char character_Name = 'M';
             int ammo = 35;
+            int HP = 10;
             float attackPower_2 = 10.5f;
             double attackSpeed = 1;
             bool play_able = true;
             Console.WriteLine($"Name : {character_Name}\n" +
                 $"role : {role}\n" +
+                $"Hp : {HP}\n" +
                 $"Ammo : {ammo}\n" +
                 $"Attack Power : {attackPower_2}\n" +
                 $"Attack Speed : {attackSpeed}\n" +
@@ -61,20 +63,49 @@ namespace Lab02
             role = "bodyguard";
             character_Name = 'D';
             ammo = 30;
+            HP = 20;
             attackPower_2 = 12.5f;
-            attackSpeed = 0.6;
-            play_able = false;
+            attackSpeed = 0.7;
+            play_able = true;
             Console.WriteLine($"Name : {character_Name}\n" +
               $"role : {role}\n" +
+              $"Hp : {HP}\n" +
               $"Ammo : {ammo}\n" +
               $"Attack Power : {attackPower_2}\n" +
               $"Attack Speed : {attackSpeed}\n" +
               $"Play able : {play_able}");
             // ตัวละครตัวที่ 3
-            role = "drunk";
+            Console.WriteLine("--Character 3--");
+            role = "Human";
+            character_Name = 'J';
+            ammo = 15;
+            HP = 10;
+            attackPower_2 = 5.5f;
+            attackSpeed = 0.5;
+            play_able = true;
+            Console.WriteLine($"Name : {character_Name}\n" +
+              $"role : {role}\n" +
+              $"Hp : {HP}\n" +
+              $"Ammo : {ammo}\n" +
+              $"Attack Power : {attackPower_2}\n" +
+              $"Attack Speed : {attackSpeed}\n" +
+              $"Play able : {play_able}");
             // ตัวละครตัวที่ 4
+            Console.WriteLine("--Character 4--");
             role = "Vampire";
-
+            character_Name = 'E';
+            HP = 15;
+            ammo = 35;
+            attackPower_2 = 15f;
+            attackSpeed = 1.2;
+            play_able = false;
+            Console.WriteLine($"Name : {character_Name}\n" +
+              $"role : {role}\n" +
+              $"Hp : {HP}\n" +
+              $"Ammo : {ammo}\n" +
+              $"Attack Power : {attackPower_2}\n" +
+              $"Attack Speed : {attackSpeed}\n" +
+              $"Play able : {play_able}");
         }
     }
 }
