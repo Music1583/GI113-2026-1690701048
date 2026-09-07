@@ -1,4 +1,11 @@
-﻿namespace Lab04
+﻿/*
+ * Student ID : 1690701048
+ * Name       : Sorawan Songkhunnatam
+ * Section    : 129A
+ * No.        : 36
+ * Course     : GI113 Computer Programming (GI)
+ */
+namespace Lab04
 {
     internal class Program
     {
