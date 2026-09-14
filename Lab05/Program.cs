@@ -43,7 +43,7 @@ namespace Lab05
             //hpHuman = hpHuman + potionHeal;
             // 2 !Normal 1 = 1 + 2 เหมือนกันแต่ไม่เหมือนกัน
             hpHuman += potionHeal;
-            Console.WriteLine($"\n Human Drinking a Potion , Healing {potionHeal} HP . health is now {hpHuman}. ");
+            Console.WriteLine($"\nHuman Drinking a Potion , Healing {potionHeal} HP . health is now {hpHuman}. ");
 
             //คำนวน damage normal attack (Arithmetic + math)
             int normalDamage = Math.Max(0, atkHuman - defMoodeng);
@@ -62,7 +62,7 @@ namespace Lab05
             int roll = rng.Next(1, 101); // 1 - 100
             bool isCrit = roll <= 10; // 10%
             int critDamage = normalDamage + Convert.ToInt32(isCrit) * normalDamage;
-            Console.WriteLine($"\nCritical hit rool : {roll} (Critical : {isCrit})");
+            Console.WriteLine($"\nCritical hit roll : {roll} (Critical : {isCrit})");
             Console.WriteLine($"Normal attack would deal Critical : critical {critDamage} DMG");
         }
     }
