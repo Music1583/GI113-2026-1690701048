@@ -15,8 +15,8 @@ namespace Assignment02
         {
             const String name = "Music";
             const double smeltRate = 0.1700;
-            const double SalvageRate = 0.2800;
-            const double MaxBatch = 500.00;
+            const double salvageRate = 0.2800;
+            const double maxBatch = 500.00;
             var inGot = 0.0;
             var ore = 0.0;
             Console.WriteLine("=======The Forge=======");
@@ -27,31 +27,31 @@ namespace Assignment02
             Console.WriteLine("vvvvvvvvvvvvvvvvvvvvvv");
             Console.Write("What you want to do : ");
             bool iskeychar = char.TryParse(Console.ReadLine(), out char key);
-            
-            if ( !iskeychar || (key != 's' && key != 'S' && key != 'b' && key != 'B'))
+
+            if (!iskeychar || (key != 's' && key != 'S' && key != 'b' && key != 'B'))
             {
                 Console.WriteLine("error : plese text (s , S , B ,b)");
             }
-         
-            else if ( key == 'S' || key == 's' )
+
+            else if (key == 'S' || key == 's')
             {
                 Console.Write("How much do you want to Smelt (1-500): ");
                 bool isamountnum = double.TryParse(Console.ReadLine(), out double amount);
-                if (!isamountnum )
+                if (!isamountnum || (amount > maxBatch && amount <= 0))
                 {
-                    Console.WriteLine("error : plese text (1-500)");
-                }
-                else if (isamountnum)
-                {
-                    if (amount <= 500 && amount > 0)
+                    if (amount > maxBatch && amount <= 0)
                     {
-                        inGot = amount * smeltRate;
-                        Console.WriteLine($"{amount:f2} {name} ore = {inGot:f2} {name} ingot");
+                        Console.WriteLine("error : plese text (1-500)");
                     }
                     else
                     {
-                        Console.WriteLine("error : amount ");
+                        Console.WriteLine("error : plese text (1-500)");
                     }
+                }
+                else if (amount <= maxBatch && (amount > 0))
+                {
+                    inGot = amount * smeltRate;
+                    Console.WriteLine($"{amount:f2} {name} ore = {inGot:f2} {name} ingot");
                 }
                 else
                 {
@@ -65,25 +65,24 @@ namespace Assignment02
                 bool isamountnum = double.TryParse(Console.ReadLine(), out double amount);
                 if (!isamountnum)
                 {
-                    Console.WriteLine("error : plese text (1-500) ");
-                }
-                else if (isamountnum)
-                {
-                    if ( amount <= 500 && amount > 0)
+                    if (amount > maxBatch && amount <= 0)
                     {
-                        ore = amount / SalvageRate;
-                        Console.WriteLine($"{amount:f2} {name} ingot = {ore:f2} {name} ore");
+                        Console.WriteLine("error : plese text (1-500)");
                     }
                     else
                     {
-                        Console.WriteLine("error : amount ");
+                        Console.WriteLine("error : plese text (1-500)");
                     }
+                }
+                else if ( amount <= maxBatch && ( amount > 0  ))
+                {
+                        ore = amount / salvageRate;
+                        Console.WriteLine($"{amount:f2} {name} ingot = {ore:f2} {name} ore");
                 }
                 else
                 {
-                    Console.WriteLine("error : plese text (s , S , B ,b) ");
+                    Console.WriteLine("error : plese text (1-500)  ");
                 }
-
             }
         }
     }
