@@ -6,8 +6,10 @@
 * Course     : GI113 Computer Programming (GI)
 */
 using UnityEngine;
+public class array : MonoBehaviour
 {
     [SerializeField] int[] numbers = { 12, 7, 30, 4, 19, 25, 9, 18 };
+
     int sum;
     float average;
     int maximum;
